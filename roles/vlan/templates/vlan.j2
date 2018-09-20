@@ -1,0 +1,11 @@
+{% if inventory_hostname in groups.cores %}
+{{ ntp_server1 }}
+{% endif %}
+!
+{% if inventory_hostname in groups.tors %}
+{{ ntp_server2 }}
+{% endif %}
+!
+{% if inventory_hostname in groups.mgnts %}
+{{ ntp_server3 }}
+{% endif %}

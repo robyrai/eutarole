@@ -1,0 +1,71 @@
+{% if inventory_hostname in groups.cores and inventory_hostname in ptps %}
+{% for host in ptps %}
+The ptp is {{ ptps[host]['value'] }}
+{% endfor %}
+{% endif %}
+!
+{% if inventory_hostname in groups.tors and inventory_hostname in ptps %}
+{% for host in ptps %}
+The ptp is {{ ptps[host]['value'] }}
+{% endfor %}
+{% endif %}
+!
+{% if inventory_hostname in groups.mgnts and inventory_hostname in ptps %}
+{% for host in ptps %}
+The ptp is {{ ptps[host]['value'] }}
+{% endfor %}
+{% endif %}
+
+
+{% if inventory_hostname in groups.cores and inventory_hostname in ptps %}
+{% for vlan in vlans %}
+The vlan name is {{ vlans[vlan]['name'] }}
+The vlan id is {{ vlans[vlan]['id'] }}
+{% endfor %}
+{% endif %}
+!
+{% if inventory_hostname in groups.tors and inventory_hostname in ptps %}
+{% for vlan in vlans %}
+The vlan name is {{ vlans[vlan]['name'] }}
+The vlan id is {{ vlans[vlan]['id'] }}
+{% endfor %}
+{% endif %}
+!
+{% if inventory_hostname in groups.mgnts and inventory_hostname in ptps %}
+{% for vlan in vlans %}
+The vlan name is {{ vlans[vlan]['name'] }}
+The vlan id is {{ vlans[vlan]['id'] }}
+{% endfor %}
+{% endif %}
+
+
+{% if inventory_hostname in groups.cores and inventory_hostname in ptps %}
+{% for host in ptps %}
+{% for vlan in vlans %}
+The ptp is {{ ptps[host]['value'] }}
+The vlan name is {{ vlans[vlan]['name'] }}
+The vlan id is {{ vlans[vlan]['id'] }}
+{% endfor %}
+{% endfor %}
+{% endif %}
+!
+{% if inventory_hostname in groups.tors and inventory_hostname in ptps %}
+{% for host in ptps %}
+{% for vlan in vlans %}
+The ptp is {{ ptps[host]['value'] }}
+The vlan name is {{ vlans[vlan]['name'] }}
+The vlan id is {{ vlans[vlan]['id'] }}
+{% endfor %}
+{% endfor %}
+{% endif %}
+!
+{% if inventory_hostname in groups.mgnts and inventory_hostname in ptps %}
+{% for host in ptps %}
+{% for vlan in vlans %}
+The ptp is {{ ptps[host]['value'] }}
+The vlan name is {{ vlans[vlan]['name'] }}
+The vlan id is {{ vlans[vlan]['id'] }}
+{% endfor %}
+{% endfor %}
+{% endif %}
+

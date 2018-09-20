@@ -1,0 +1,8 @@
+---
+vlans:
+  VLAN111:
+    name: VLAN111
+    id: 111
+  VLAN222:
+    name: VLAN222
+    id: 222

@@ -1,0 +1,3 @@
+---
+- name: Generate configuration
+  template: src=vlan.j2 dest=./output_files/config_files/{{ inventory_hostname }}/{{ inventory_hostname }}.001_VLAN

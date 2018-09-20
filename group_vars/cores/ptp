@@ -1,0 +1,6 @@
+---
+ptps:
+  hostC1:
+    value: core1_ptp
+  hostC2:
+    value: core2_ptp

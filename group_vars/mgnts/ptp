@@ -1,0 +1,6 @@
+---
+ptps:
+  hostM1:
+    value: mgnt1_ptp
+  hostM2:
+    value: mgnt2_ptp

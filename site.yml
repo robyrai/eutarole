@@ -1,0 +1,19 @@
+---
+- hosts: all
+  gather_facts: false
+  connection: local
+  tasks:
+    - name: Create directory for config files
+      file:
+        path: output_files/config_files/{{ inventory_hostname }}
+        state: directory
+        mode: 0755
+
+- hosts: NY4
+  gather_facts: false
+  connection: local
+  var_file:
+    - groups_vars/all
+
+  roles:
+    - vlan

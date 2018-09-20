@@ -1,0 +1,8 @@
+---
+vlans:
+  VLAN2:
+    name: VLAN2
+    id: 2
+  VLAN3:
+    name: VLAN3
+    id: 3

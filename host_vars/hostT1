@@ -1,0 +1,8 @@
+---
+vlans:
+  VLAN11:
+    name: VLAN11
+    id: 11
+  VLAN22:
+    name: VLAN22
+    id: 22

@@ -1,0 +1,6 @@
+---
+ptps:
+  hostT1:
+    value: tors1_ptp
+  hostT2:
+    value: tors2_ptp

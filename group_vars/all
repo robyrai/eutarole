@@ -1,0 +1,5 @@
+---
+
+ntp_server1: ntp1.mordor.com_from_all_1
+ntp_server2: ntp1.mordor.com_from_all_2
+ntp_server3: ntp1.mordor.com_from_all_3
